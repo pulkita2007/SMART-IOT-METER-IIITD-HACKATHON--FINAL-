@@ -49,10 +49,10 @@ npm install
 Create a `.env` file in the root directory:
 
 ```env
-MONGO_URI=mongodb+srv://username:password@cluster.mongodb.net/smart-energy-meter?retryWrites=true&w=majority
-JWT_SECRET=your-super-secret-jwt-key-here-make-it-long-and-random
-PORT=3000
-AI_API_URL=http://localhost:5000/predict
+MONGO_URI
+JWT_SECRET
+PORT
+AI_API_URL
 NODE_ENV=development
 ```
 
@@ -316,10 +316,10 @@ The chatbot supports natural language queries:
 ### Environment Variables for Production
 
 ```env
-MONGO_URI=mongodb+srv://username:password@cluster.mongodb.net/smart-energy-meter?retryWrites=true&w=majority
-JWT_SECRET=your-production-secret-key-here
-PORT=3000
-AI_API_URL=https://your-ai-service.com/predict
+MONGO_URI=
+JWT_SECRET
+PORT
+AI_API_URL
 NODE_ENV=production
 ```
 
@@ -369,5 +369,6 @@ MIT License - see LICENSE file for details.
 ##  Support
 
 For support and questions, please open an issue in the repository.
-#   - s m a r t - m e t e r - b a c k e n d  
+#   - s m a r t - m e t e r - b a c k e n d 
+ 
  
