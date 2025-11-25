@@ -1,0 +1,232 @@
+/*.chatbot-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.7);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 999;
+}
+
+.chatbot-container {
+  background: #1a1a1a;
+  border-radius: 16px;
+  width: 400px;
+  max-height: 600px;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.5);
+}
+
+.chatbot-header {
+  background: #00d4ff;
+  color: #000;
+  padding: 14px 16px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-weight: bold;
+}
+
+.chatbot-messages {
+  flex: 1;
+  padding: 15px;
+  overflow-y: auto;
+  background: #121212;
+}
+
+.message {
+  margin-bottom: 10px;
+  padding: 10px 14px;
+  border-radius: 12px;
+  max-width: 80%;
+  line-height: 1.5;
+}
+
+.message.user {
+  background: #0078ff;
+  color: #fff;
+  align-self: flex-end;
+  margin-left: auto;
+}
+
+.message.ai {
+  background: #333;
+  color: #fff;
+  align-self: flex-start;
+}
+
+.chatbot-input {
+  display: flex;
+  border-top: 1px solid #333;
+  background: #1a1a1a;
+  padding: 10px;
+}
+
+.chatbot-input input {
+  flex: 1;
+  padding: 8px 12px;
+  background: #111;
+  color: #fff;
+  border: none;
+  outline: none;
+  border-radius: 6px;
+}
+
+.chatbot-input button {
+  background: #00d4ff;
+  border: none;
+  margin-left: 8px;
+  padding: 8px 12px;
+  border-radius: 6px;
+  cursor: pointer;
+  color: #000;
+}*/
+/* Overlay behind the chatbot */
+.chatbot-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.6);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 999;
+}
+
+/* Chatbot container */
+.chatbot-container {
+  background: #f5f5f5; /* light background for black text */
+  border-radius: 16px;
+  width: 400px;
+  max-height: 600px;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.3);
+  font-family: Arial, sans-serif;
+}
+
+/* Header */
+.chatbot-header {
+  background: #00d4ff;
+  color: #000;
+  padding: 14px 16px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-weight: bold;
+  border-top-left-radius: 16px;
+  border-top-right-radius: 16px;
+}
+
+/* Chat messages area */
+.chatbot-messages {
+  flex: 1;
+  padding: 15px;
+  overflow-y: auto;
+  background: #eaeaea;
+  scroll-behavior: smooth;
+}
+
+/* Individual messages */
+.message {
+  margin-bottom: 10px;
+  padding: 10px 14px;
+  border-radius: 12px;
+  max-width: 80%;
+  line-height: 1.5;
+  word-wrap: break-word;
+}
+
+/* User message styling */
+.message.user {
+  background: #cce5ff; /* light blue */
+  color: #000;
+  align-self: flex-end;
+  margin-left: auto;
+}
+
+/* AI message styling */
+.message.ai {
+  background: #dcdcdc; /* light gray */
+  color: #000;
+  align-self: flex-start;
+}
+
+/* Input area */
+.chatbot-input {
+  display: flex;
+  border-top: 1px solid #ccc;
+  background: #fff;
+  padding: 10px;
+}
+
+/* Input text */
+.chatbot-input input {
+  flex: 1;
+  padding: 8px 12px;
+  background: #fff;
+  color: #000;        /* black text */
+  border: 1px solid #ccc;
+  outline: none;
+  border-radius: 6px;
+  font-size: 14px;
+}
+
+/* Send button */
+.chatbot-input button {
+  background: #00d4ff;
+  border: none;
+  margin-left: 8px;
+  padding: 8px 12px;
+  border-radius: 6px;
+  cursor: pointer;
+  color: #000;
+  font-weight: bold;
+  transition: background 0.3s;
+}
+
+.chatbot-input button:hover {
+  background: #00aacc;
+}
+
+/* Close button */
+.chatbot-close {
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  font-size: 18px;
+  color: #000;
+  transition: transform 0.2s;
+}
+
+.chatbot-close:hover {
+  transform: rotate(90deg);
+}
+
+/* Placeholder text color */
+.chatbot-input input::placeholder {
+  color: #888;
+}
+/* Chat input box */
+.chatbot-input input {
+  flex: 1;
+  padding: 8px 12px;
+  background: #fff;   /* white background */
+  color: #000;        /* black text when typing */
+  border: 1px solid #ccc;
+  outline: none;
+  border-radius: 6px;
+  font-size: 14px;
+}
+
+
+
+
